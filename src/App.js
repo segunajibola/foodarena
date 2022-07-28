@@ -1,9 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 // const burger = document.querySelector('#burger');
 // const menu = document.querySelector('#menu');
@@ -19,9 +18,9 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
-    </>  
+      <Navbar />
+      <Hero />
+    </>
   );
 };
 
