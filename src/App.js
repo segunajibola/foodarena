@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Hero from './components/Hero';
-// import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 
 // const burger = document.querySelector('#burger');
@@ -18,9 +18,10 @@ import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    
-      <Navbar />
-      
+    <>
+    <Navbar />
+    <Hero />
+    </>  
   );
 };
 
