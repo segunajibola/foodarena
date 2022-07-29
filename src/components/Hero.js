@@ -183,7 +183,7 @@ function Hero() {
 
         <div className="mt-8 grid lg:grid-cols-3 gap-10">
           {/* <!--card goes here--> */}
-          <div className="card hover:shadow-lg transform duration-300 hover:scale-110 m-2">
+          <div className="bg-red-300 rounded overflow-hidden shadow-md relative hover:shadow-lg transform duration-300 hover:scale-110 m-2">
             <img
               src="img/friedrice.jfif"
               alt="Fried rice"
