@@ -183,15 +183,15 @@ function Hero() {
 
         <div className="mt-8 grid lg:grid-cols-3 gap-10">
           {/* <!--card goes here--> */}
-          <div className="bg-red-300 rounded overflow-hidden shadow-md relative hover:shadow-lg transform duration-300 hover:scale-110 m-2">
+          <div className="card hover:shadow-lg transform duration-300 hover:scale-110 m-2">
             <img
               src="img/friedrice.jfif"
               alt="Fried rice"
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Fried Rice</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Fried Rice</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Shop 3
               </span>
             </div>
@@ -217,8 +217,8 @@ function Hero() {
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Bread and Beans</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Bread and Beans</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Shop 15
               </span>
             </div>
@@ -245,8 +245,8 @@ function Hero() {
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Pounded Yam</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Pounded Yam</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Shop 20
               </span>
             </div>
@@ -305,8 +305,8 @@ function Hero() {
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Baked Eggs</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Baked Eggs</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Outlet 3
               </span>
             </div>
@@ -334,8 +334,8 @@ function Hero() {
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Spicy Rice</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Spicy Rice</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Outlet 15
               </span>
             </div>
@@ -363,8 +363,8 @@ function Hero() {
               className="w-full h-32 sm:h-48 object-cover"
             />
             <div className="m-4">
-              <span className="font-bold">Indian Rice</span>
-              <span className="block text-gray-500 text-sm">
+              <span className="font-bold text-gray-800">Indian Rice</span>
+              <span className="block text-gray-800 text-sm">
                 Recipe by Outlet 20
               </span>
             </div>
