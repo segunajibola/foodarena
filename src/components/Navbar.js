@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="fixed mt-0 w-full top-0 flex items-center justify-between flex-wrap bg-primary p-4 z-50">
-      <div className="flex items-center flex-shrink-0 text-black ml-6 mr-6">
+    <nav className="fixed mt-0 w-full top-0 flex items-center justify-between flex-wrap bg-red-500 p-4 z-50">
+      <div className="flex items-center flex-shrink-0 text-white ml-6 mr-6">
         <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ function Navbar() {
               d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
             />
           </svg>
-          <span className="font-semibold text-3xl tracking-tight">FOODIT</span>
+          <span className="font-semibold text-3xl tracking-tight">FOODARENA</span>
         </a>
       </div>
       <div className="block px-4 cursor-pointer lg:hidden" id="burger">
@@ -37,13 +37,13 @@ function Navbar() {
       </div>
 
       <div
-        className="w-full block lg:flex hidden lg:items-center lg:justify-end lg:w-auto"
+        className="w-full block lg:flex lg:items-center lg:justify-end lg:w-auto"
         id="menu"
       >
         <div className="text-lg lg:flex-grow lg:mr-12 lg:text-sm sm:flex-col">
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >
             <svg
               className="inline mb-1 w-5"
@@ -60,7 +60,7 @@ function Navbar() {
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ function Navbar() {
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function Navbar() {
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ function Navbar() {
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

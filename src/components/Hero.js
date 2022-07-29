@@ -13,8 +13,8 @@ function Hero() {
         }}
       >
         <div className="text-center" style={{ opacity: "100%" }}>
-          <h2 className="inline text-white text-6xl sm:mt-4 md:mt-10 font-semibold text-center tracking-widest">
-            FOODIT
+          <h2 className="inline text-6xl sm:mt-4 md:mt-10 font-semibold text-center tracking-widest">
+            FOODARENA
           </h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,22 +55,22 @@ function Hero() {
           >
             <div className="block h-full w-full text-white text-5xl text-center">
               <img
-                src="img/baked eggs.jpeg"
+                src="img/bakedeggs.jpeg"
                 alt=""
-                Width="1500px"
+                width="1500px"
                 height="500px"
               />
             </div>
           </div>
 
           <label
-            for="carousel-3"
+            htmlFor="carousel-3"
             className="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
           >
             ‹
           </label>
           <label
-            for="carousel-2"
+            htmlFor="carousel-2"
             className="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
           >
             ›
@@ -91,21 +91,21 @@ function Hero() {
           >
             <div className="block h-full w-full text-white text-5xl text-center">
               <img
-                src="img/spicy rice.jpeg"
+                src="img/spicyrice.jpeg"
                 alt=""
-                Width="1500px"
+                width="1500px"
                 height="0px"
               />
             </div>
           </div>
           <label
-            for="carousel-1"
+            htmlFor="carousel-1"
             className="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
           >
             ‹
           </label>
           <label
-            for="carousel-3"
+            htmlFor="carousel-3"
             className="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
           >
             ›
@@ -126,21 +126,21 @@ function Hero() {
           >
             <div className="block h-full w-full text-white text-5xl text-center">
               <img
-                src="img/Indian rice.jpg"
+                src="img/indianrice.jpg"
                 alt=""
-                Width="1500px"
+                width="1500px"
                 height="500px"
               />
             </div>
           </div>
           <label
-            for="carousel-2"
+            htmlFor="carousel-2"
             className="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
           >
             ‹
           </label>
           <label
-            for="carousel-1"
+            htmlFor="carousel-1"
             className="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
           >
             ›
@@ -150,7 +150,7 @@ function Hero() {
           <ol className="carousel-indicators">
             <li className="inline-block mr-3">
               <label
-                for="carousel-1"
+                htmlFor="carousel-1"
                 className="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
               >
                 •
@@ -158,7 +158,7 @@ function Hero() {
             </li>
             <li className="inline-block mr-3">
               <label
-                for="carousel-2"
+                htmlFor="carousel-2"
                 className="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
               >
                 •
@@ -166,7 +166,7 @@ function Hero() {
             </li>
             <li className="inline-block mr-3">
               <label
-                for="carousel-3"
+                htmlFor="carousel-3"
                 className="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
               >
                 •
@@ -185,7 +185,7 @@ function Hero() {
           {/* <!--card goes here--> */}
           <div className="card hover:shadow-lg transform duration-300 hover:scale-110 m-2">
             <img
-              src="img/fried rice.jfif"
+              src="img/friedrice.jfif"
               alt="Fried rice"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -212,7 +212,7 @@ function Hero() {
           </div>
           <div className="card hover:shadow-lg transform duration-300 hover:scale-110 m-2">
             <img
-              src="img/bread and beans.jfif"
+              src="img/breadandbeans.jfif"
               alt="Bread and Beans"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -240,7 +240,7 @@ function Hero() {
           {/* <!--card goes here--> */}
           <div className="card hover:shadow-lg hidden lg:block transform duration-300 hover:scale-110 m-2">
             <img
-              src="img/pounded yam.jfif"
+              src="img/poundedyam.jfif"
               alt="Pounded Yam"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -300,7 +300,7 @@ function Hero() {
           {/* <!--card goes here--> */}
           <div className="card hover:shadow-lg transform duration-300 hover:scale-125 m-2">
             <img
-              src="img/baked eggs.jpeg"
+              src="img/bakedeggs.jpeg"
               alt="Baked Eggs"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -329,7 +329,7 @@ function Hero() {
           {/* <!--card goes here--> */}
           <div className="card hover:shadow-lg transform duration-300 hover:scale-125 m-2">
             <img
-              src="img/spicy rice.jpeg"
+              src="img/spicyrice.jpeg"
               alt="Spicy Rice"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -358,7 +358,7 @@ function Hero() {
           {/* <!--card goes here--> */}
           <div className="card hover:shadow-lg hidden lg:block transform duration-300 hover:scale-125 m-2">
             <img
-              src="img/Indian rice.jpg"
+              src="img/indianrice.jpg"
               alt="Indian Rice"
               className="w-full h-32 sm:h-48 object-cover"
             />
@@ -397,7 +397,7 @@ function Hero() {
 
       <div
         style={{
-          background: "url('img/our kitchen 4.jpg') no-repeat",
+          background: "url('img/kitchen4.jpg') no-repeat",
           backgroundSize: "100%",
           margin: "55px 0px 25px 0px",
           width: "100%",
@@ -429,7 +429,7 @@ function Hero() {
 
       <div
         style={{
-          background: "url('img/book a table.jpg') no-repeat",
+          background: "url('img/bookatable.jpg') no-repeat",
           backgroundSize: "100%",
           margin: "55px 0px 25px 0px",
           width: "100%",
@@ -461,7 +461,7 @@ function Hero() {
 
       <div
         style={{
-          background: " url('img/book a table.jpg') no-repeat",
+          background: "url('img/bookatable2.jpg') no-repeat",
           backgroundSize: "100%",
           margin: "55px 0px 25px 0px",
           width: "100%",
