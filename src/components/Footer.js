@@ -67,7 +67,7 @@ function Footer() {
       </div>
       <div>
         <p class="text-center mt-5">
-          Made with &#9829 by
+          Made with &#9829; by
           <a href="https://www.twitter.com/iamsegunajibola">Segun Ajibola</a>
         </p>
       </div>
