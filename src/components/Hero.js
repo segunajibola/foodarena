@@ -484,7 +484,7 @@ function Hero() {
           <a href="maintainance.html">About Us</a>
         </h3>
         <p className="mt-3">
-          At FoodIt, a modern-day food distribution channel, we care about what
+          At Foodarena, a modern-day food distribution channel, we care about what
           you eat, how you eat and when you eat. What matters to us is customers
           experience and we try to make that feeling awesome for you.
         </p>
