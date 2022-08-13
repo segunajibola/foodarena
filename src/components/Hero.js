@@ -417,7 +417,7 @@ function Hero() {
       </div>
       <div>
         <h3 className="text-5xl border-b-2 border-primary inline-block">
-          <a href="maintainance.html">Visit Us</a>
+          <a href="">Visit Us</a>
         </h3>
         <p className="mt-3">
           A day at FoodIt to experience how we cook what we eat is a great way
@@ -449,7 +449,7 @@ function Hero() {
       </div>
       <div>
         <h3 className="text-5xl border-b-2 border-primary inline-block">
-          <a href="maintainance.html">Contact Us</a>
+          <a href="">Contact Us</a>
         </h3>
         <p className="mt-3">
           Want to suggest a help for us? Contact our Support and Sales Team
@@ -481,7 +481,7 @@ function Hero() {
       </div>
       <div>
         <h3 className="text-5xl border-b-2 border-primary inline-block">
-          <a href="maintainance.html">About Us</a>
+          <a href="">About Us</a>
         </h3>
         <p className="mt-3">
           At Foodarena, a modern-day food distribution channel, we care about what
