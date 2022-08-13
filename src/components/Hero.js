@@ -269,8 +269,7 @@ function Hero() {
 
         <div className="flex justify-center">
           <div
-            className="rounded-lg py-3 px-6 uppercase text-xs font-bold cursor-pointer tracking-wider
-                bg-primary p-6 mt-8 text-white hover:shadow-inner hover:bg-white transform hover:scale-110 hover:text-primary border hover:border-primary transition ease-out duration-300"
+            className="rounded-lg py-3 px-6 uppercase text-xs font-bold cursor-pointer tracking-wider bg-red-500 p-6 mt-8 text-white hover:shadow-inner transform hover:scale-110 border transition ease-out duration-300"
           >
             See more
           </div>
