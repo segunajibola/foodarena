@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "./Slider";
 
 function Hero() {
   return (
@@ -36,6 +37,8 @@ function Hero() {
           Tasty meals at your doorstep
         </h3>
       </header>
+
+      <Slider />
 
       <div className="carousel relative shadow-2xl bg-white">
         <div className="carousel-inner relative overflow-hidden w-full">
