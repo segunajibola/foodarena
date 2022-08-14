@@ -17,12 +17,13 @@ let data = [
 ];
 let sliderBoxStyle = {
   height: "200px"
-  //, width: "200px"
+  , width: "10%",
+  backgroundRepeat: "no-repeat"
   // , background: "tranparent"
 };
 
 let itemsStyle = {
-  // ,height: "100%", padding: "0px"
+//   height: "100%", padding: "0px"
   // , padding: "15px"
   // , background: "#FFCA28"
   // , borderRadius: "4px"
