@@ -40,9 +40,10 @@ function Hero() {
 
       <Slider />
 
+{/*
       <div className="carousel relative shadow-2xl bg-white">
         <div className="carousel-inner relative overflow-hidden w-full">
-          {/* <!--Slide 1--> */}
+          <!--Slide 1-->
           <input
             className="carousel-open"
             type="radio"
@@ -79,7 +80,7 @@ function Hero() {
             ›
           </label>
 
-          {/* <!--Slide 2--> */}
+          Slide 2
           <input
             className="carousel-open"
             type="radio"
@@ -114,7 +115,7 @@ function Hero() {
             ›
           </label>
 
-          {/* <!--Slide 3--> */}
+          <!--Slide 3-->
           <input
             className="carousel-open"
             type="radio"
@@ -149,7 +150,7 @@ function Hero() {
             ›
           </label>
 
-          {/* <!-- Add additional indicators for each slide--> */}
+          Add additional indicators for each slide
           <ol className="carousel-indicators">
             <li className="inline-block mr-3">
               <label
@@ -178,6 +179,7 @@ function Hero() {
           </ol>
         </div>
       </div>
+*/}
 
       <div>
         <h4 className="font-bold mt-6 pb-2 text-lg border-b border-red-200">
@@ -389,8 +391,8 @@ function Hero() {
 
         <div className="flex justify-center">
           <div
-            className="rounded-lg py-3 px-6 uppercase text-xs font-bold cursor-pointer tracking-wider
-                bg-primary p-6 mt-8 text-white hover:shadow-inner hover:bg-white transform hover:scale-110 hover:text-primary border hover:border-primary transition ease-out duration-300"
+            className="rounded-lg py-3 px-6 uppercase text-xs font-bold cursor-pointer tracking-wider bg-red-500 p-6 mt-8 text-white hover:shadow-inner transform hover:scale-110 border transition ease-out duration-300"
+                
           >
             See more
           </div>

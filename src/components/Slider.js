@@ -5,9 +5,9 @@ function Slider() {
     const next = document.getElementById('carousel-button-next')
     const prev = document.getElementById('carousel-button-prev')
 
-    next.addEventListener('click', moveToNextSlide);
+    next?.addEventListener('click', moveToNextSlide);
 
-    prev.addEventListener('click', moveToPrevSlide);
+    prev?.addEventListener('click', moveToPrevSlide);
 
     const hideAllSlides = () => {
         for (let slide of slides) {
