@@ -13,21 +13,21 @@ function Slider() {
             slide.classList.add('carousel-item-hidden');
         }
     }
+    console.log(slidePosition)
     console.log(slides)
 
     const moveToNextSlide = () => {
         hideAllSlides();
-        slidePosition === totalSlides - 1 ? slidePosition = 0 : slidePosition++
+        (slidePosition === totalSlides - 1) ? slidePosition = 0 : slidePosition++
 
         slides[slidePosition].classList.add("carousel-item-visible");
     }
 
     const moveToPrevSlide = (e) => {
         hideAllSlides();
-        slidePosition === 0? slidePosition = totalSlides - 1 : slidePosition--
+        slidePosition === 0? (slidePosition = totalSlides - 1) : slidePosition--
         
-        e.currentTarget.classList.add("carousel-item-visible");
-        // slides[slidePosition].classList.add("carousel-item-visible");
+        slides[slidePosition].classList.add("carousel-item-visible");
     }
 
     // useEffect(() => {
