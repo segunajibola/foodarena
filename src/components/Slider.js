@@ -1,13 +1,11 @@
+import { useEffect } from "react";
+
 function Slider() {
     const slides = document.getElementsByClassName('carousel-item');
     let slidePosition = 0;
     const totalSlides = slides.length;
     const next = document.getElementById('carousel-button-next')
     const prev = document.getElementById('carousel-button-prev')
-
-    next?.addEventListener('click', moveToNextSlide);
-
-    prev?.addEventListener('click', moveToPrevSlide);
 
     const hideAllSlides = () => {
         for (let slide of slides) {
@@ -30,6 +28,15 @@ function Slider() {
         slides[slidePosition].classList.add("carousel-item-visible");
     }
 
+    useEffect(() => {
+      const timeout = setTimeout(() => moveToNextSlide, 1000)
+    
+      return () => {
+        clearTimeout(timeout)
+      }
+    }, [])
+    
+
     return(
         <div className="carousel">
             <div className="carousel-item carousel-item-visible">
@@ -43,8 +50,8 @@ function Slider() {
             </div>
             
             <div className="carousel-actions">
-                <button id="carousel-button-prev" aria-label="Previous Slide">&lt;</button>
-                <button id="carousel-button-next" aria-label="Next Slide">&gt;</button>
+                <button id="carousel-button-prev" aria-label="Previous Slide" onClick={moveToPrevSlide}>&lt;</button>
+                <button id="carousel-button-next" aria-label="Next Slide" onClick={moveToNextSlide}>&gt;</button>
             </div>
         </div>
     )

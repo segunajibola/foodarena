@@ -1,5 +1,5 @@
 .carousel {
-    max-width: 600px;
+    /* max-width: 600px; */
     position: relative;
 }
 
@@ -15,8 +15,8 @@
 
 .carousel .carousel-item img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    /* max-width: 600px; */
+    height: 500px;
 }
 
 .carousel .carousel-actions {
