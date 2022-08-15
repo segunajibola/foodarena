@@ -1,70 +1,53 @@
-import React, {Component} from 'react'
-import CarouselSlider from "react-carousel-slider";
+function Slider() {
+    const slides = document.getElementsByClassName('carousel-item');
+    let slidePosition = 0;
+    const totalSlides = slides.length;
+    const next = document.getElementById('carousel-button-next')
+    const prev = document.getElementById('carousel-button-prev')
 
-let data = [
- {
-    des: "",
-    imgSrc: "https://images.unsplash.com/photo-1660490966948-218f35953796?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    des: "",
-    imgSrc: "https://images.unsplash.com/photo-1660490966948-218f35953796?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    des: "",
-    imgSrc: "https://images.unsplash.com/photo-1660490966948-218f35953796?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-  }
-];
-let sliderBoxStyle = {
-  height: "200px"
-  , width: "10%",
-  backgroundRepeat: "no-repeat"
-  // , background: "tranparent"
-};
+    next.addEventListener('click', moveToNextSlide);
 
-let itemsStyle = {
-//   height: "100%", padding: "0px"
-  // , padding: "15px"
-  // , background: "#FFCA28"
-  // , borderRadius: "4px"
-  // , margin: "0px 0px", padding: "0px"
-};
+    prev.addEventListener('click', moveToPrevSlide);
 
-let textBoxStyle = {
-  // textAlign: "left"
-  // ,width:"50%"
-  // , background: "transparent"
-  // , fontSize: "36px"
-  // , fontWeight: 300
-};
+    const hideAllSlides = () => {
+        for (let slide of slides) {
+            slide.classList.remove('carousel-item-visible');
+            slide.classList.add('carousel-item-hidden');
+        }
+    }
 
-let buttonSetting = {
-  // placeOn: "middle-inside"
-  // ,hoverEvent: true,
-  // , style: {
-  //   left: {
-  //     margin: "0px 0px 0px 10px"
-  //   },
-  //   right: {
-  //     margin: "0px 10px 0px 0px"
-  //   }
-  // }
-};
+    const moveToNextSlide = () => {
+        hideAllSlides();
+        slidePosition === totalSlides - 1 ? slidePosition = 0 : slidePosition++
 
-let manner = {
-  // autoSliding: {interval: "4s"}
-  //, duration: "0.3s"
-};
+        slides[slidePosition].classList.add("carousel-item-visible");
+    }
 
-const Slider = () => (
-  <CarouselSlider
-    slideItems={data}
-    manner={manner}
-    buttonSetting={buttonSetting}
-    sliderBoxStyle={sliderBoxStyle}
-    itemsStyle={itemsStyle}
-    textBoxStyle={textBoxStyle}
-  />
-);
+    const moveToPrevSlide = () => {
+        hideAllSlides();
+        slidePosition === 0? slidePosition = totalSlides - 1 : slidePosition--
+
+        slides[slidePosition].classList.add("carousel-item-visible");
+    }
+
+    return(
+        <div className="carousel">
+            <div className="carousel-item carousel-item-visible">
+                <img src="img/1.jpg" />
+            </div>
+            <div className="carousel-item">
+                <img src="img/2.jpg" />
+            </div>
+            <div className="carousel-item">
+                <img src="img/3.jpg" />
+            </div>
+            
+            <div className="carousel-actions">
+                <button id="carousel-button-prev" aria-label="Previous Slide">&lt;</button>
+                <button id="carousel-button-next" aria-label="Next Slide">&gt;</button>
+            </div>
+        </div>
+    )
+}
 
 export default Slider;

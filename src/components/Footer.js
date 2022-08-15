@@ -2,45 +2,45 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer class="bg-red-300 mt-4 px-2 py-2">
-      <div class="text-center text-gray-900 text-lg font-semibold mt-5 mb-2 tracking-widest">
+    <footer className="bg-red-300 mt-4 px-2 py-2">
+      <div className="text-center text-gray-900 text-lg font-semibold mt-5 mb-2 tracking-widest">
         Connect on Social Media
       </div>
-      <div class="grid grid-cols-4 grid-flow-col gap-4 text-center">
-        <ul class="grid-items">
+      <div className="grid grid-cols-4 grid-flow-col gap-4 text-center">
+        <ul className="grid-items">
           <li>
             <a href="#">
-              Facebook <i class="fab fa-facebook-f"></i>
+              Facebook <i className="fab fa-facebook-f"></i>
             </a>
           </li>
         </ul>
-        <ul class="grid-items">
+        <ul className="grid-items">
           <li>
             <a href="#">
-              Instagram <i class="fab fa-instagram"></i>
+              Instagram <i className="fab fa-instagram"></i>
             </a>
           </li>
         </ul>
-        <ul class="grid-items">
+        <ul className="grid-items">
           <li>
             <a href="#">
-              Whatsapp <i class="fab fa-whatsapp"></i>
+              Whatsapp <i className="fab fa-whatsapp"></i>
             </a>
           </li>
         </ul>
-        <ul class="grid-items">
+        <ul className="grid-items">
           <li>
             <a href="#">
-              Twitter <i class="block sm:inline mt-1 fab fa-twitter"></i>
+              Twitter <i className="block sm:inline mt-1 fab fa-twitter"></i>
             </a>
           </li>
         </ul>
       </div>
-      <div class="text-center text-gray-900 text-lg font-semibold mt-5 tracking-widest">
+      <div className="text-center text-gray-900 text-lg font-semibold mt-5 tracking-widest">
         Additional links
       </div>
-      <div class="grid grid-cols-3 grid-flow-col gap-4 text-center">
-        <ul class="grid-items">
+      <div className="grid grid-cols-3 grid-flow-col gap-4 text-center">
+        <ul className="grid-items">
           <li>
             <a href="#">Live</a>
           </li>
@@ -48,7 +48,7 @@ function Footer() {
             <a href="#">Blog</a>
           </li>
         </ul>
-        <ul class="grid-items">
+        <ul className="grid-items">
           <li>
             <a href="#">History</a>
           </li>
@@ -56,7 +56,7 @@ function Footer() {
             <a href="#">Terms & Condition</a>
           </li>
         </ul>
-        <ul class="grid-items">
+        <ul className="grid-items">
           <li>
             <a href="#">Awards</a>
           </li>
@@ -66,13 +66,13 @@ function Footer() {
         </ul>
       </div>
       <div>
-        <p class="text-center mt-5">
+        <p className="text-center mt-5">
           Made with &#9829; by
           <a href="https://www.twitter.com/iamsegunajibola">Segun Ajibola</a>
         </p>
       </div>
       <div>
-        <p class="text-center">Copyright 2021. All right reserved.</p>
+        <p className="text-center">Copyright 2021. All right reserved.</p>
       </div>
     </footer>
   );
