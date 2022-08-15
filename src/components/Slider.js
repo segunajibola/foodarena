@@ -13,6 +13,7 @@ function Slider() {
             slide.classList.add('carousel-item-hidden');
         }
     }
+    console.log(slides)
 
     const moveToNextSlide = () => {
         hideAllSlides();
@@ -21,20 +22,21 @@ function Slider() {
         slides[slidePosition].classList.add("carousel-item-visible");
     }
 
-    const moveToPrevSlide = () => {
+    const moveToPrevSlide = (e) => {
         hideAllSlides();
         slidePosition === 0? slidePosition = totalSlides - 1 : slidePosition--
-
-        slides[slidePosition].classList.add("carousel-item-visible");
+        
+        e.currentTarget.classList.add("carousel-item-visible");
+        // slides[slidePosition].classList.add("carousel-item-visible");
     }
 
-    useEffect(() => {
-      const timeout = setTimeout(() => moveToNextSlide, 1000)
+    // useEffect(() => {
+    //   const timeout = setTimeout(() => moveToNextSlide, 1000)
     
-      return () => {
-        clearTimeout(timeout)
-      }
-    }, [])
+    //   return () => {
+    //     clearTimeout(timeout)
+    //   }
+    // }, [])
     
 
     return(
