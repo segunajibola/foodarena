@@ -3,8 +3,8 @@ import Slider from "./Slider";
 
 function Hero() {
   return (
-    <main className="bg-white px-12 py-6">
-      <header className="lg:hidden"
+    <main className="bg-white px-2 lg:px-12 py-6">
+      <header className="md:hidden"
         style={{
           background: "url('img/headerbg.jpeg') norepeat",
           backgroundSize: "100%",
@@ -19,7 +19,7 @@ function Hero() {
           </h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="inline -mt-9 h-12 w-12"
+            className="inline -mt-8 h-12 w-12"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -33,12 +33,12 @@ function Hero() {
             />
           </svg>
         </div>
-        <h3 className="lg:text-5xl font-semibold italic text-center text-primary mt-4 sm:text-2xl tracking-widest">
+        <h3 className="lg:text-5xl font-semibold italic text-center text-primary mt-2 sm:text-2xl tracking-widest">
           Tasty meals at your doorstep
         </h3>
       </header>
 
-      <Slider className="w-32"/>
+      <Slider />
      
       <div>
         <h4 className="font-bold mt-6 pb-2 text-lg border-b border-red-200">
