@@ -1,11 +1,7 @@
-import { useEffect } from "react";
-
 function Slider() {
     const slides = document.getElementsByClassName('carousel-item');
     let slidePosition = 0;
     const totalSlides = slides.length;
-    const next = document.getElementById('carousel-button-next')
-    const prev = document.getElementById('carousel-button-prev')
 
     const hideAllSlides = () => {
         for (let slide of slides) {
@@ -23,7 +19,7 @@ function Slider() {
         slides[slidePosition].classList.add("carousel-item-visible");
     }
 
-    const moveToPrevSlide = (e) => {
+    const moveToPrevSlide = () => {
         hideAllSlides();
         slidePosition === 0? (slidePosition = totalSlides - 1) : slidePosition--
         
