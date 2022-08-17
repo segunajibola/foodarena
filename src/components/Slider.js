@@ -42,14 +42,24 @@ function Slider() {
     return(
         <div className="carousel">
             <div className="carousel-item carousel-item-visible">
-                <img src="img/1.jpg" />
+                <img src="img/food1.jpg" />
             </div>
             <div className="carousel-item">
-                <img src="img/2.jpg" />
+                <img src="img/food2.jpg" />
             </div>
             <div className="carousel-item">
-                <img src="img/3.jpg" />
+                <img src="img/food3.jpg" />
             </div>
+            <div className="carousel-item">
+                <img src="img/food4.jpg" />
+            </div>
+            <div className="carousel-item">
+                <img src="img/food5.jpg" />
+            </div>
+            <div className="carousel-item">
+                <img src="img/food6.jpg" />
+            </div>
+
             
             <div className="carousel-actions">
                 <button id="carousel-button-prev" aria-label="Previous Slide" onClick={moveToPrevSlide}>&lt;</button>
