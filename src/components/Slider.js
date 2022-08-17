@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 function Slider() {
     const slides = document.getElementsByClassName("carousel-item");
+    // slides is empty on first render
   
     //   const position = useState()
   
