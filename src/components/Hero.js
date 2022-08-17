@@ -38,7 +38,7 @@ function Hero() {
         </h3>
       </header>
 
-      <Slider />
+      <Slider className="w-32"/>
      
       <div>
         <h4 className="font-bold mt-6 pb-2 text-lg border-b border-red-200">
