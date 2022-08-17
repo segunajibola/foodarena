@@ -1,30 +1,36 @@
-function Slider() {
-    const slides = document.getElementsByClassName('carousel-item');
-    let slidePosition = 0;
-    const totalSlides = slides.length;
+import { useEffect } from "react";
 
+
+function Slider() {
+    const slides = document.getElementsByClassName("carousel-item");
+  
+    //   const position = useState()
+  
+    let slidePosition = 0;
+  
     const hideAllSlides = () => {
-        for (let slide of slides) {
-            slide.classList.remove('carousel-item-visible');
-            slide.classList.add('carousel-item-hidden');
-        }
-    }
-    console.log(slidePosition)
-    console.log(slides)
+      for (let slide of slides) {
+        slide.classList.remove("carousel-item-visible");
+        slide.classList.add("carousel-item-hidden");
+      }
+    };
 
     const moveToNextSlide = () => {
-        hideAllSlides();
-        (slidePosition === totalSlides - 1) ? slidePosition = 0 : slidePosition++
+      hideAllSlides();
 
-        slides[slidePosition].classList.add("carousel-item-visible");
-    }
+      slidePosition === slides.length - 1 ? slidePosition = 0 : slidePosition++;
 
+      slides[slidePosition].classList.add("carousel-item-visible");
+    };
+  
     const moveToPrevSlide = () => {
-        hideAllSlides();
-        slidePosition === 0? (slidePosition = totalSlides - 1) : slidePosition--
-        
-        slides[slidePosition].classList.add("carousel-item-visible");
-    }
+      hideAllSlides();
+
+      slidePosition === 0 ? slidePosition = slides.length - 1 : slidePosition--;
+  
+      slides[slidePosition].classList.add("carousel-item-visible");
+    };
+
 
     // useEffect(() => {
     //   const timeout = setTimeout(() => moveToNextSlide, 1000)
@@ -33,6 +39,8 @@ function Slider() {
     //     clearTimeout(timeout)
     //   }
     // }, [])
+
+    // setTimeout(moveToNextSlide, 1000)
     
 
     return(
@@ -59,6 +67,7 @@ function Slider() {
             
             <div className="carousel-actions">
                 <button id="carousel-button-prev" aria-label="Previous Slide" onClick={moveToPrevSlide}>&lt;</button>
+
                 <button id="carousel-button-next" aria-label="Next Slide" onClick={moveToNextSlide}>&gt;</button>
             </div>
         </div>

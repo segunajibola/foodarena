@@ -4,7 +4,7 @@ import Slider from "./Slider";
 function Hero() {
   return (
     <main className="bg-white px-12 py-6">
-      <header
+      <header className="lg:hidden"
         style={{
           background: "url('img/headerbg.jpeg') norepeat",
           backgroundSize: "100%",
@@ -13,8 +13,8 @@ function Hero() {
           height: "50%",
         }}
       >
-        <div className="text-center" style={{ opacity: "100%" }}>
-          <h2 className="inline text-6xl sm:mt-4 md:mt-10 font-semibold text-center tracking-widest">
+        <div className="text-center">
+          <h2 className="inline text-4xl sm:mt-4 md:mt-10 font-semibold text-center tracking-widest">
             FOODARENA
           </h2>
           <svg
@@ -33,7 +33,7 @@ function Hero() {
             />
           </svg>
         </div>
-        <h3 className="lg:text-6xl font-semibold italic text-center text-primary mt-4 sm:text-3xl tracking-widest">
+        <h3 className="lg:text-5xl font-semibold italic text-center text-primary mt-4 sm:text-2xl tracking-widest">
           Tasty meals at your doorstep
         </h3>
       </header>
