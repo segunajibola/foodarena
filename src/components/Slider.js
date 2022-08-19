@@ -16,13 +16,19 @@ function Slider() {
   };
 
   const moveToNextSlide = () => {
+    const clearTheInterval = () => {clearInterval(timeout)}
+    clearTheInterval()
+
     hideAllSlides();
 
     slidePosition === slides.length - 1 ? (slidePosition = 0) : slidePosition++;
 
     slides[slidePosition].classList.add("carousel-item-visible");
-    setTimeout(moveToNextSlide, 2000)
   };
+
+  // setTimeout(moveToNextSlide, 2000)
+  const timeout = () => {setInterval(moveToNextSlide, 2000)}
+  timeout()
 
   const moveToPrevSlide = () => {
     hideAllSlides();
@@ -30,17 +36,16 @@ function Slider() {
     slidePosition === 0 ? (slidePosition = slides.length - 1) : slidePosition--;
 
     slides[slidePosition].classList.add("carousel-item-visible");
-    setTimeout(moveToPrevSlide, 2000)
   };
 
-  useEffect(() => {
-    const timeout = () => {setTimeout(moveToNextSlide, 1000)}
+  // useEffect(() => {
+  //   const timeout = () => {setTimeout(moveToNextSlide, 1000)}
 
     //   return () => {
     //     clearTimeout(timeout)
     //   }
-    return timeout;
-  }, [slidePosition]);
+  //   return timeout;
+  // }, [slidePosition]);
 
 //   setTimeout(moveToNextSlide, 1000);
 
