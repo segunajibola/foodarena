@@ -16,8 +16,9 @@ function Slider() {
   };
 
   const moveToNextSlide = () => {
-    const clearTheInterval = () => {clearInterval(timeout)}
-    clearTheInterval()
+    // const clearTheInterval = () => {clearInterval(timeout)}
+    // clearTheInterval()
+    clearInterval(timeout)
 
     hideAllSlides();
 
