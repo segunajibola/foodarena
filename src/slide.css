@@ -17,6 +17,7 @@
     width: 100%;
     /* max-width: 600px; */
     height: 350px;
+    object-fit: cover;
 }
 
 .carousel .carousel-actions {
